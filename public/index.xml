@@ -23,6 +23,13 @@
       <description>My first website that I created from scratch</description>
     </item>
     <item>
+      <title>Self Hosting Container Registry</title>
+      <link>http://localhost:1313/blogs/self-hosting-container-registry/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/self-hosting-container-registry/</guid>
+      <description>&lt;p&gt;This blog is to just share what is my thought process on why I wanted to build Harbor my self hosted container registry.&lt;/p&gt;&#xA;&lt;p&gt;My portfolio website is deployed using an image pushed to my account in docker hub. For it to be pulled by my GitOps system I had to make the image publicly accessible. This is obviously insecure and someone can just use that image. So, I decided to self host a container registry.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Hosting My First Portfolio Website in My Homelab</title>
       <link>http://localhost:1313/blogs/hosting-my-first-portfolio-website-in-my-homelab/</link>
       <pubDate>Thu, 13 Mar 2025 00:00:00 +0000</pubDate>

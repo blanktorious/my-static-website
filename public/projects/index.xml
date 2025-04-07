@@ -13,14 +13,14 @@
       <link>http://localhost:1313/projects/my-first-project/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/my-first-project/</guid>
-      <description>This is a summary of my awesome project.</description>
+      <description>This is my self hosted homelab using my old laptop</description>
     </item>
     <item>
-      <title>Homelab 2</title>
+      <title>My First Static Website</title>
       <link>http://localhost:1313/projects/my-second-project/</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/my-second-project/</guid>
-      <description>This is a summary of my awesome project.</description>
+      <description>My first website that I created from scratch</description>
     </item>
   </channel>
 </rss>

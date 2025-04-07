@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Harbor on JD DE MONTEVERDE</title>
+    <link>http://localhost:1313/tags/harbor/</link>
+    <description>Recent content in Harbor on JD DE MONTEVERDE</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/harbor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self Hosting Container Registry</title>
+      <link>http://localhost:1313/blogs/self-hosting-container-registry/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/self-hosting-container-registry/</guid>
+      <description>&lt;p&gt;This blog is to just share what is my thought process on why I wanted to build Harbor my self hosted container registry.&lt;/p&gt;&#xA;&lt;p&gt;My portfolio website is deployed using an image pushed to my account in docker hub. For it to be pulled by my GitOps system I had to make the image publicly accessible. This is obviously insecure and someone can just use that image. So, I decided to self host a container registry.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

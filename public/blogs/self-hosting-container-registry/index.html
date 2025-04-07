@@ -3,7 +3,7 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blogs - JD DE MONTEVERDE</title>
+        <title>Self Hosting Container Registry - JD DE MONTEVERDE</title>
         
         
         <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon_io/apple-touch-icon.png">
@@ -146,7 +146,7 @@
                 
                 <a href="http://localhost:1313/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
                 
-                <a href="http://localhost:1313/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">Blogs</a>
+                <a href="http://localhost:1313/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
             </nav>
             <div class="hidden md:flex justify-end">
@@ -173,7 +173,7 @@
                 
                 <a href="http://localhost:1313/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
                 
-                <a href="http://localhost:1313/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">Blogs</a>
+                <a href="http://localhost:1313/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
             </nav>
             <div class="mt-auto p-6 border-t border-gray-800">
@@ -268,94 +268,34 @@
 </script> 
         <main>
             
-<div class="w-full md:w-3/4 lg:w-1/2 mx-auto px-4 py-12">
-  <h1 class="text-5xl font-bold mb-12">Blogs</h1>
+<div class="w-1/2 mx-auto py-12">
+    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-2xl bg-[#121212]">
+        <h1 class="text-4xl font-bold mb-4">Self Hosting Container Registry</h1>
+        
+            <div class="flex items-center gap-4 mb-8 text-gray-400">
+                <time datetime="2025-04-05">April 5, 2025</time>
+                <div class="flex gap-2">
+                    
+                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Homelab</span>
+                    
+                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Container Registry</span>
+                    
+                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Kubernetes</span>
+                    
+                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Harbor</span>
+                    
+                </div>
+            </div>
+        
+        
+        <div class="prose prose-invert max-w-none" style="white-space: pre-line;">
+            <p>This blog is to just share what is my thought process on why I wanted to build Harbor my self hosted container registry.</p>
+<p>My portfolio website is deployed using an image pushed to my account in docker hub. For it to be pulled by my GitOps system I had to make the image publicly accessible. This is obviously insecure and someone can just use that image. So, I decided to self host a container registry.</p>
+<p>In my day job we use Azure Container Registry and that gave me the understanding of what is its purpose. I wanted to build something like that in my homelab. My initial idea was just to use the registry image by docker to understand how can I setup a self hosted container registry then after that I’ll proceed on upgrading to harbor. I’ve shared this in the Kubecraft community and Mischa recommended to just go straight up to Harbor.</p>
+<p>After some research, it is actually better to just go with harbor since it has more features that I can play with. Also, my plan was to build a CI/CD github action to automatically deploy my blogging website that I will build using Hugo. So, it’s better to go with harbor since it has user permission feature which will help me secure the authentication to my github actions.</p>
 
-  <div class="space-y-12 max-w-3xl mx-auto">
-    
-    <div class="group">
-      <p class="text-gray-400 text-sm mb-2">April 5, 2025</p>
-      <a href="../blogs/self-hosting-container-registry/" class="block">
-        <h3 class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-3">Self Hosting Container Registry</h3>
-      </a>
-      <p class="text-gray-400 mb-4">My thought process on why want to self host a container registry</p>
-
-      
-      <div class="flex flex-wrap gap-2">
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Homelab</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Container Registry</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Kubernetes</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Harbor</span>
-        
-        
-      </div>
-      
+        </div>        
     </div>
-    
-    <div class="group">
-      <p class="text-gray-400 text-sm mb-2">March 13, 2025</p>
-      <a href="../blogs/hosting-my-first-portfolio-website-in-my-homelab/" class="block">
-        <h3 class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-3">Hosting My First Portfolio Website in My Homelab</h3>
-      </a>
-      <p class="text-gray-400 mb-4">A summary about how I setup my first static website portfolio in my Kubernetes cluster</p>
-
-      
-      <div class="flex flex-wrap gap-2">
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Homelab</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Static Website</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Kubernetes Deployment</span>
-        
-        
-      </div>
-      
-    </div>
-    
-    <div class="group">
-      <p class="text-gray-400 text-sm mb-2">March 10, 2025</p>
-      <a href="../blogs/started-my-homelab/" class="block">
-        <h3 class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-3">Started my Homelab</h3>
-      </a>
-      <p class="text-gray-400 mb-4">The story of what was my experience starting my Homelab</p>
-
-      
-      <div class="flex flex-wrap gap-2">
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Homelab</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">K3s</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Linux</span>
-        
-        
-      </div>
-      
-    </div>
-    
-  </div>
 </div>
 
         </main>
