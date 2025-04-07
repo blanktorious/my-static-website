@@ -3,7 +3,7 @@
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blogs - JD DE MONTEVERDE</title>
+        <title>Started my Homelab - JD DE MONTEVERDE</title>
         
         
         <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon_io/apple-touch-icon.png">
@@ -146,7 +146,7 @@
                 
                 <a href="http://localhost:1313/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
                 
-                <a href="http://localhost:1313/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">Blogs</a>
+                <a href="http://localhost:1313/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
             </nav>
             <div class="hidden md:flex justify-end">
@@ -173,7 +173,7 @@
                 
                 <a href="http://localhost:1313/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Projects</a>
                 
-                <a href="http://localhost:1313/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">Blogs</a>
+                <a href="http://localhost:1313/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
             </nav>
             <div class="mt-auto p-6 border-t border-gray-800">
@@ -268,64 +268,36 @@
 </script> 
         <main>
             
-<div class="w-full md:w-3/4 lg:w-1/2 mx-auto px-4 py-12">
-  <h1 class="text-5xl font-bold mb-12">Blogs</h1>
+<div class="w-1/2 mx-auto py-12">
+    <div class="max-w-3xl mx-auto p-8 border border-gray-800 rounded-2xl bg-[#121212]">
+        <h1 class="text-4xl font-bold mb-4">Started my Homelab</h1>
+        
+            <div class="flex items-center gap-4 mb-8 text-gray-400">
+                <time datetime="2025-03-10">March 10, 2025</time>
+                <div class="flex gap-2">
+                    
+                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Homelab</span>
+                    
+                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">K3s</span>
+                    
+                    <span class="px-2 py-1 bg-gray-800 rounded-md text-xs font-medium text-gray-300">Linux</span>
+                    
+                </div>
+            </div>
+        
+        
+        <div class="prose prose-invert max-w-none" style="white-space: pre-line;">
+            <p>Today is March 10, 2025, and I am writing this at 4:30 in the morning. I cannot sleep, so I just wanted to write down my thoughts about the difficulties I have faced or am currently facing while setting up my homelab.</p>
+<p>I started “homelabing” on February 26, beginning with a simple Ubuntu Server installation on my old laptop which is a Dell Latitude 7290. I set up SSH and then successfully assigned it a static IP. That alone was a challenge for me. It took me about 10 hours just to get the static IP working, which pretty much confirms that networking is not my strong suit but that is the whole point why I started homelab. That is to have an environment where I can play and learn about the things I am not experienced at.</p>
+<p>After that, I installed K3s. The installation itself was smooth, and I had no issues. I managed to make the cluster accessible locally, so I did not have to SSH into the server every time I wanted to run kubectl commands. What I did was add the K3s cluster context to my local machine, which was a bit of an aha moment for me. At my day job, when I add a Kubernetes cluster from Azure, I just copy and paste the commands. But doing it manually made me really understand how merging contexts actually works.</p>
+<p>Once that was set up, my next goal was to host a portfolio website I built months ago. I wanted to replicate the architecture my current company uses, meaning GitOps, a private container registry, a load balancer, and all that good stuff.</p>
+<p>Long story short, I successfully deployed the application and accessed it using port forwarding. After that, I set up Traefik as an ingress controller and was able to reach the site via the server’s IP. The next step was to make it publicly accessible since I had already bought a domain through Cloudflare. But that is where I hit a roadblock because I just could not get it to work.</p>
+<p>After a lot of research, I realized that my K3s setup was not as secure as it should be. Hosting an application this early without a solid infrastructure in place is not really ideal.</p>
+<p>For now, my main focus is on the infrastructure itself. I want to build a strong foundation where I can play around and experiment without worrying too much about security risks or stability issues. My next steps will be to properly implement GitOps, set up my own container registry using Harbor, and make sure everything is more structured before I try hosting anything publicly again.</p>
+<p>That is all for now. See you in the next blog!</p>
 
-  <div class="space-y-12 max-w-3xl mx-auto">
-    
-    <div class="group">
-      <p class="text-gray-400 text-sm mb-2">March 13, 2025</p>
-      <a href="../blogs/hosting-my-first-portfolio-website-in-my-homelab/" class="block">
-        <h3 class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-3">Hosting My First Portfolio Website in My Homelab</h3>
-      </a>
-      <p class="text-gray-400 mb-4">A summary about how I setup my first static website portfolio in my Kubernetes cluster</p>
-
-      
-      <div class="flex flex-wrap gap-2">
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Homelab</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Static Website</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Kubernetes Deployment</span>
-        
-        
-      </div>
-      
+        </div>        
     </div>
-    
-    <div class="group">
-      <p class="text-gray-400 text-sm mb-2">March 10, 2025</p>
-      <a href="../blogs/started-my-homelab/" class="block">
-        <h3 class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors duration-200 mb-3">Started my Homelab</h3>
-      </a>
-      <p class="text-gray-400 mb-4">The story of what was my experience starting my Homelab</p>
-
-      
-      <div class="flex flex-wrap gap-2">
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Homelab</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">K3s</span>
-        
-        
-        
-        <span class="px-2 py-1 text-xs bg-[#121212] text-gray-100 border border-gray-800 rounded-md transition-all duration-300">Linux</span>
-        
-        
-      </div>
-      
-    </div>
-    
-  </div>
 </div>
 
         </main>
