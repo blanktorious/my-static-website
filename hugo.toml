@@ -1,0 +1,42 @@
+baseURL = "https://johndoe.dev"
+languageCode = 'en-us'
+title = 'JD DE MONTEVERDE'
+theme = 'hugo-noir'
+
+# URL handling
+relativeURLs = true
+canonifyURLs = true
+
+# Taxonomy configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+name = "JD DE MONTEVERDE"
+location = "Laguna, Philippines"
+description = "Welcome to my website. This is where I showcase my projects and blogs about my thoughts, learnings, and experiences as a DevOps Engineer."
+profile_image = "/images/profile.jpg"
+
+# Social Media Links
+github = "https://github.com/blanktorious"
+email = "johnddemonteverde@gmail.com"
+linkedin = "https://linkedin.com/in/jddemonteverde"
+
+[[params.projects]]
+title = "Homelab"
+description = "test"
+tech = "Python, FastAPI, Redis, Kubernetes"
+image = "/images/projects/excepteur.jpg"
+link = "https://github.com/loremipsum/excepteur"
+
+
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+  [[menu.main]]
+    name = "Blogs"
+    url = "/blogs/"
+    weight = 2
