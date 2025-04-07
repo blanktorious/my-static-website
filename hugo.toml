@@ -1,4 +1,4 @@
-baseURL = "https://johndoe.dev"
+baseURL = "https://jddemonteverde.com"
 languageCode = 'en-us'
 title = 'JD DE MONTEVERDE'
 theme = 'hugo-noir'
@@ -22,14 +22,6 @@ profile_image = "/images/profile.jpg"
 github = "https://github.com/blanktorious"
 email = "johnddemonteverde@gmail.com"
 linkedin = "https://linkedin.com/in/jddemonteverde"
-
-[[params.projects]]
-title = "Homelab"
-description = "test"
-tech = "Python, FastAPI, Redis, Kubernetes"
-image = "/images/projects/excepteur.jpg"
-link = "https://github.com/loremipsum/excepteur"
-
 
 [menu]
   [[menu.main]]
