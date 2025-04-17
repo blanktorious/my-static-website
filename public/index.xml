@@ -45,10 +45,10 @@
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description></description>
+      <link>http://localhost:1313/about/about/</link>
+      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <guid>http://localhost:1313/about/about/</guid>
+      <description>&lt;p&gt;Hello World! I&amp;rsquo;m passionate about technology and software development. This space is where I share my projects, experiences, and thoughts.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to explore my work and reach out if you&amp;rsquo;d like to connect!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

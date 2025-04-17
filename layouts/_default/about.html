@@ -7,7 +7,9 @@
             <div class="bg-[#121212] p-8 rounded-lg mb-8">
                 <div class="prose prose-invert prose-lg max-w-none">
                     <div class="text-lg">
-                        {{ .Content }}
+                        {{ with .Site.GetPage "about/about" }}
+                            {{ .Content }}
+                        {{ end }}
                     </div>
                 </div>
             </div>
