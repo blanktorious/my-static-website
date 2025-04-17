@@ -144,17 +144,15 @@
             <nav class="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-6">
                 
                 
+                <a href="http://localhost:1313/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
                 <a href="http://localhost:1313/projects/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">Projects</a>
                 
                 <a href="http://localhost:1313/blogs/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
+                <a href="http://localhost:1313/about/" class="inline-block text-lg text-gray-300 hover:text-white transition-colors duration-300 ">About Me</a>
+                
             </nav>
-            <div class="hidden md:flex justify-end">
-                <div class="flex items-center">
-                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
-                    <div id="local-time" class="text-lg text-gray-300"></div>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -171,36 +169,20 @@
             </div>
             <nav class="flex flex-col p-6 space-y-4">
                 
+                <a href="http://localhost:1313/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">About</a>
+                
                 <a href="http://localhost:1313/projects/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 text-white font-semibold">Projects</a>
                 
                 <a href="http://localhost:1313/blogs/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">Blogs</a>
                 
+                <a href="http://localhost:1313/about/" class="text-xl text-gray-300 hover:text-white transition-colors duration-300 ">About Me</a>
+                
             </nav>
-            <div class="mt-auto p-6 border-t border-gray-800">
-                <div class="flex items-center justify-center">
-                    <span class="text-lg text-gray-300 mr-2">Local Time:</span>
-                    <div id="mobile-local-time" class="text-lg text-gray-300"></div>
-                </div>
-            </div>
         </div>
     </div>
 </header>
 
 <script>
-    
-    function updateLocalTime() {
-        const timeElements = document.querySelectorAll('#local-time, #mobile-local-time');
-        timeElements.forEach(element => {
-            if (element) {
-                const now = new Date();
-                const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-                element.textContent = timeString;
-            }
-        });
-    }
-    updateLocalTime();
-    setInterval(updateLocalTime, 1000);
-
     
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenuClose = document.getElementById('mobile-menu-close');
@@ -275,9 +257,7 @@
         
         <div class="project-card relative overflow-hidden rounded-lg bg-[#121212] border border-gray-700 transition-all duration-300 group">
             <div class="aspect-w-16 aspect-h-9 overflow-hidden relative">
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 z-10"></div>
                 <img src="../images/projects/k9s-screenshot.png" alt="Homelab" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 z-20"></div>
                 
                 
                 <div class="absolute inset-0 z-30 p-4 pb-3 md:p-6 md:pb-4 flex flex-col justify-end transform transition-transform duration-500 translate-y-0 group-hover:translate-y-[-20px]">
@@ -286,17 +266,17 @@
                         
                         
                           
-                          <span class="px-1.5 md:px-2 py-0.5 bg-black/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
+                          <span class="px-1.5 md:px-2 py-0.5 bg-white/10 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
                             Kubernetes
                           </span>
                         
                           
-                          <span class="px-1.5 md:px-2 py-0.5 bg-black/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
+                          <span class="px-1.5 md:px-2 py-0.5 bg-white/10 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
                             GitOps(FluxCD)
                           </span>
                         
                           
-                          <span class="px-1.5 md:px-2 py-0.5 bg-black/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
+                          <span class="px-1.5 md:px-2 py-0.5 bg-white/10 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
                             Linux
                           </span>
                         
@@ -316,9 +296,7 @@
         
         <div class="project-card relative overflow-hidden rounded-lg bg-[#121212] border border-gray-700 transition-all duration-300 group">
             <div class="aspect-w-16 aspect-h-9 overflow-hidden relative">
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 z-10"></div>
                 <img src="../images/projects/static-website.png" alt="My First Static Website" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-60 z-20"></div>
                 
                 
                 <div class="absolute inset-0 z-30 p-4 pb-3 md:p-6 md:pb-4 flex flex-col justify-end transform transition-transform duration-500 translate-y-0 group-hover:translate-y-[-20px]">
@@ -327,17 +305,17 @@
                         
                         
                           
-                          <span class="px-1.5 md:px-2 py-0.5 bg-black/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
+                          <span class="px-1.5 md:px-2 py-0.5 bg-white/10 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
                             CSS
                           </span>
                         
                           
-                          <span class="px-1.5 md:px-2 py-0.5 bg-black/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
+                          <span class="px-1.5 md:px-2 py-0.5 bg-white/10 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
                             HTML
                           </span>
                         
                           
-                          <span class="px-1.5 md:px-2 py-0.5 bg-black/30 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
+                          <span class="px-1.5 md:px-2 py-0.5 bg-white/10 backdrop-blur-sm rounded-md text-[10px] md:text-xs font-medium text-gray-100">
                             JavaScript
                           </span>
                         
@@ -389,7 +367,14 @@
     right: 0;
     bottom: 0;
     object-fit: cover;
-    filter: saturate(1.1) contrast(1.1);
+    filter: saturate(1.1) contrast(1.1) blur(1px);
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .aspect-w-16 > img {
+    filter: saturate(1.1) contrast(1.1) blur(0);
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

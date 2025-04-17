@@ -23,12 +23,22 @@ github = "https://github.com/blanktorious"
 email = "johnddemonteverde@gmail.com"
 linkedin = "https://linkedin.com/in/jddemonteverde"
 
+# Certifications
+[[params.certifications]]
+title = "Microsoft Certified: Azure Fundamentals"
+date = "March 17, 2025"
+url = "https://www.credly.com/badges/your-badge-id"
+
 [menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
   [[menu.main]]
     name = "Projects"
     url = "/projects/"
-    weight = 1
+    weight = 2
   [[menu.main]]
     name = "Blogs"
     url = "/blogs/"
-    weight = 2
+    weight = 3

@@ -43,5 +43,12 @@
       <guid>http://localhost:1313/blogs/started-my-homelab/</guid>
       <description>&lt;p&gt;Today is March 10, 2025, and I am writing this at 4:30 in the morning. I cannot sleep, so I just wanted to write down my thoughts about the difficulties I have faced or am currently facing while setting up my homelab.&lt;/p&gt;&#xA;&lt;p&gt;I started “homelabing” on February 26, beginning with a simple Ubuntu Server installation on my old laptop which is a Dell Latitude 7290. I set up SSH and then successfully assigned it a static IP. That alone was a challenge for me. It took me about 10 hours just to get the static IP working, which pretty much confirms that networking is not my strong suit but that is the whole point why I started homelab. That is to have an environment where I can play and learn about the things I am not experienced at.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
