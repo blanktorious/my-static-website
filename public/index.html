@@ -125,9 +125,21 @@
         body {
             font-family: 'Space Grotesk', sans-serif;
         }
+        
+        header {
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .header-scrolled {
+            background: rgba(17, 17, 17, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
-<header class="py-6 relative">
+<header class="py-6 fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300">
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div class="flex justify-between items-center">
@@ -179,7 +191,23 @@
     </div>
 </header>
 
+
+<div class="h-24"></div>
+
 <script>
+    
+    function handleScroll() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) {
+            header.classList.add('header-scrolled');
+        } else {
+            header.classList.remove('header-scrolled');
+        }
+    }
+
+    
+    window.addEventListener('scroll', handleScroll);
+    
     
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenuClose = document.getElementById('mobile-menu-close');
