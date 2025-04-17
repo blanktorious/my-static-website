@@ -31,7 +31,7 @@ url = "https://learn.microsoft.com/api/credentials/share/en-us/JDdeMonteverde-48
 
 [menu]
   [[menu.main]]
-    name = "About"
+    name = "About Me"
     url = "/about/"
     weight = 1
   [[menu.main]]

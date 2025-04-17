@@ -1,9 +1,7 @@
----
-title: "About Me"
-date: 2023-03-15T10:30:00+05:30
-draft: false
----
+Ever since I was a kid, I’ve been curious about how things work. I used to disassemble toys and electronic devices just to see what was inside and figure out how they worked. Growing up, I was also drawn to computers because of games like Minecraft, where I hosted servers, built structures, and engineered machinery inside the game. I also played Counter-Strike and various RPGs. At first, it was all about gaming, but over time, I became more interested in how systems ran behind the scenes.
 
-Hello World! I'm passionate about technology and software development. This space is where I share my projects, experiences, and thoughts.
+I took up Electronics Engineering in college. It was interesting, but deep down, I knew I was more passionate about tech. After graduating, I looked for a tech job and fortunately landed my first role as a Junior Software Engineer. Without any prior experience or background in IT, my only weapon was my curiosity and ability to learn quickly. I was assigned to a DevOps team, and I considered myself a Junior DevOps Engineer. I started to understand how things worked in the IT industry, thanks to the experiences and curiosity I developed from using computers as a kid.
 
-Feel free to explore my work and reach out if you'd like to connect!
+Now, with over three years of experience in DevOps, I'm still just as curious as I was back then. I’ve built my own Kubernetes homelab as a personal project. It’s where I explore cloud-native tools, test new ideas, and continuously sharpen my skills through hands-on work.
+
+I enjoy building systems, solving problems, and constantly learning. Whether it’s through real-world projects or personal experiments, I’m always looking for ways to make things work better and more efficiently based on the same passion I’ve had since I was young.

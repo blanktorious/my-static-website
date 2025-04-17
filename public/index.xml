@@ -44,11 +44,11 @@
       <description>&lt;p&gt;Today is March 10, 2025, and I am writing this at 4:30 in the morning. I cannot sleep, so I just wanted to write down my thoughts about the difficulties I have faced or am currently facing while setting up my homelab.&lt;/p&gt;&#xA;&lt;p&gt;I started “homelabing” on February 26, beginning with a simple Ubuntu Server installation on my old laptop which is a Dell Latitude 7290. I set up SSH and then successfully assigned it a static IP. That alone was a challenge for me. It took me about 10 hours just to get the static IP working, which pretty much confirms that networking is not my strong suit but that is the whole point why I started homelab. That is to have an environment where I can play and learn about the things I am not experienced at.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About Me</title>
+      <title></title>
       <link>http://localhost:1313/about/about/</link>
-      <pubDate>Wed, 15 Mar 2023 10:30:00 +0530</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/about/</guid>
-      <description>&lt;p&gt;Hello World! I&amp;rsquo;m passionate about technology and software development. This space is where I share my projects, experiences, and thoughts.&lt;/p&gt;&#xA;&lt;p&gt;Feel free to explore my work and reach out if you&amp;rsquo;d like to connect!&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ever since I was a kid, I’ve been curious about how things work. I used to disassemble toys and electronic devices just to see what was inside and figure out how they worked. Growing up, I was also drawn to computers because of games like Minecraft, where I hosted servers, built structures, and engineered machinery inside the game. I also played Counter-Strike and various RPGs. At first, it was all about gaming, but over time, I became more interested in how systems ran behind the scenes.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
